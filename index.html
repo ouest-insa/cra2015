@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Helios by HTML5 UP</title>
+		<title>CRA 2015</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -18,6 +18,8 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="http://maps.google.com/maps/api/js?key=AIzaSyAScTDxHxVLVrUx0APtGfufFJerF7L1CeI&sensor=false"></script>
+		<script src="js/directions.js"></script> 
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -26,359 +28,224 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body class="homepage">
+	<body class="homepage" onLoad="initialize()">
 
-		<!-- Header -->
 			<div id="header">
-						
-				<!-- Inner -->
 					<div class="inner">
 						<header>
-							<h1><a href="index.html" id="logo">Helios</a></h1>
+							<h1><a href="index.html" id="logo">CONGRÈS RÉGIONAL D'AUTOMNE</a></h1>
 							<hr />
-							<p>Another fine freebie by HTML5 UP</p>
+							<p style="color:#fff">1/2 JANVIER 2015 - RENNES</p>
 						</header>
 						<footer>
-							<a href="#banner" class="button circled scrolly">Start</a>
+							<a href="#details" class="button circled scrolly">Suivant</a>
 						</footer>
 					</div>
 				
-				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="">Dropdown</a>
-								<ul>
-									<li><a href="#">Lorem ipsum dolor</a></li>
-									<li><a href="#">Magna phasellus</a></li>
-									<li><a href="#">Etiam dolore nisl</a></li>
-									<li>
-										<a href="">And a submenu &hellip;</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Phasellus consequat</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Veroeros feugiat</a></li>
-								</ul>
-							</li>
-							<li><a href="left-sidebar.html">Left Sidebar</a></li>
-							<li><a href="right-sidebar.html">Right Sidebar</a></li>
-							<li><a href="no-sidebar.html">No Sidebar</a></li>
+							<li><a href="#introduction" class="scrolly">Introduction</a></li>
+							<li><a href="#banner" class="scrolly">Détails</a></li>
+							<li><a href="#programme" class="scrolly">Programme</a></li>
+							<li><a href="#partenaires" class="scrolly">Partenaires</a></li>
+							<li><a href="#footer" class="scrolly">Lieu</a></li>
 						</ul>
 					</nav>
 
 			</div>
 			
-		<!-- Banner -->
 			<section id="banner">
 				<header>
-					<h2>Hi. You're looking at <strong>Helios</strong>.</h2>
-					<p>
-						A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
-						Built on <strong>skel</strong> and released under the <a href="http://html5up.net/license">CCA</a> license.
-					</p>
+					<h2>À propos du Congrès</h2>
+
+					<p>Le weekend du 1-2 janvier 2015 se réuniront les Junior-Entreprises de la Région Ouest lors du Congrès Régional d'Automne : il s'agit d'un moment privilégié d'échanges dans le milieu des Junior-Entreprises. Ces dernières se retrouvent pour une journée de formations aux thèmes variés, afin d'apporter à chaque Junior-Entrepreneur les outils pour exceller dans l'exercice de ses compétences au sein de sa structure. Ce congrès sera également l'occasion pour les Junior-Entrepreneurs de l'Ouest de passer un test leur permettant de devenir auditeur-conseil à la Confédération Nationale des Junior-Entreprises.</p>
+
+					<p><strong>Téléchargez le <a href="">planning des formations</a> !</strong></p>
+
+					<p>Cet évènement ne se résume pas uniquement à des formations : animations, repas conviviaux, soirée le samedi soir, visite conviviale le dimanche viendront rendre ce week-end mémorable. Les organisateurs de ce congrès mettent toutes leurs ressources en commun pour vous offrir un CRP exceptionnel !</p>
+
+					<p>N'hésitez pas à nous rejoindre et venez partager ce moment avec la région Ouest !</p>
 				</header>
 			</section>
-
-		<!-- Carousel -->
-			<section class="carousel">
-				<div class="reel">
-
-					<article>
-						<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Pulvinar sagittis congue</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-				
-					<article>
-						<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Fermentum sagittis proin</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-				
-					<article>
-						<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Sed quis rhoncus placerat</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-				
-					<article>
-						<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Ultrices urna sit lobortis</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-				
-					<article>
-						<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Varius magnis sollicitudin</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-
-					<article>
-						<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Pulvinar sagittis congue</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-				
-					<article>
-						<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Fermentum sagittis proin</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-				
-					<article>
-						<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Sed quis rhoncus placerat</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-				
-					<article>
-						<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Ultrices urna sit lobortis</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-				
-					<article>
-						<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-						<header>
-							<h3><a href="#">Varius magnis sollicitudin</a></h3>
-						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
-					</article>
-
-				</div>
-			</section>
 			
-		<!-- Main -->
-			<div class="wrapper style2">
-
-				<article id="main" class="container special">
-					<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-					<header>
-						<h2><a href="#">Sed massa imperdiet magnis</a></h2>
-						<p>
-							Sociis aenean eu aenean mollis mollis facilisis primis ornare penatibus aenean. Cursus ac enim 
-							pulvinar curabitur morbi convallis. Lectus malesuada sed fermentum dolore amet.
-						</p>
-					</header>
-					<p>
-						Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa 
-						posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus 
-						sit arcu sociis. Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam 
-						mus lacinia lobortis phasellus suscipit. Fermentum lobortis non tristique ante proin sociis accumsan 
-						lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum 
-						consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue 
-						interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia 
-						natoque aenean scelerisque.
-					</p>
-					<footer>
-						<a href="#" class="button">Continue Reading</a>
-					</footer>
-				</article>
-
-			</div>
-
-		<!-- Features -->
-			<div class="wrapper style1">
+			<div class="wrapper style1" id="programme">
 				
 				<section id="features" class="container special">
 					<header>
-						<h2>Morbi ullamcorper et varius leo lacus</h2>
-						<p>Ipsum volutpat consectetur orci metus consequat imperdiet duis integer semper magna.</p>
+						<h2>Programme du Week-End</h2>
 					</header>
 					<div class="row">
-						<article class="4u special">
-							<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+						<article class="6u special">
 							<header>
-								<h3><a href="#">Gravida aliquam penatibus</a></h3>
+								<h3>SAMEDI</h3>
 							</header>
-							<p>
-								Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-								porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-							</p>
+							<p></p>
 						</article>
-						<article class="4u special">
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+						<article class="6u special">
 							<header>
-								<h3><a href="#">Sed quis rhoncus placerat</a></h3>
+								<h3>DIMANCHE</h3>
 							</header>
-							<p>
-								Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-								porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-							</p>
-						</article>
-						<article class="4u special">
-							<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Magna laoreet et aliquam</a></h3>
-							</header>
-							<p>
-								Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-								porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-							</p>
+							<p></p>
 						</article>
 					</div>
 				</section>
 
 			</div>
+			
+			<section class="carousel" id="partenaires">
+				<h2 style="text-align:center">Nos partenaires</h2>
+				
+				<div class="reel">
 
-		<!-- Footer -->
+					<article>
+						<a href="http://alten.fr" class="image featured"><img src="images/alten.png" alt="" style="max-height: 150px"/></a>
+						<header>
+							<h3><a href="http://alten.fr">Alten</a></h3>
+						</header>
+						<p>Found for engineering.</p>							
+					</article>
+				
+					<article>
+						<a href="https://www.secure.bnpparibas.net/banque/portail/particulier/HomePage?type=site" class="image featured"><img src="images/bnp.png" alt="" style="max-height: 150px"/></a>
+						<header>
+							<h3><a href="https://www.secure.bnpparibas.net/banque/portail/particulier/HomePage?type=site">BNP Paribas</a></h3>
+						</header>
+						<p>La banque et l'assurance d'un monde qui change.</p>							
+					</article>
+				
+					<article>
+						<a href="http://assos-escrennes.fr/test/" class="image featured"><img src="images/bretagneconseil.png" alt="" style="max-height: 150px"/></a>
+						<header>
+							<h3><a href="http://assos-escrennes.fr/test/">Bretagne Conseil</a></h3>
+						</header>
+						<p>La Junior-Entreprise de l'ESC Rennes School Of Business.</p>							
+					</article>
+				
+					<article>
+						<a href="https://www.junior-entreprises.com/" class="image featured"><img src="images/cnje.png" alt="" style="max-height: 150px"/></a>
+						<header>
+							<h3><a href="https://www.junior-entreprises.com/">Junior-Entreprise</a></h3>
+						</header>
+						<p></p>							
+					</article>
+				
+					<article>
+						<a href="http://www.ey.com/" class="image featured"><img src="images/ey.png" alt="" style="max-height: 150px"/></a>
+						<header>
+							<h3><a href="http://www.ey.com/">EY</a></h3>
+						</header>
+						<p>Build a better working world.</p>							
+					</article>
+				
+					<article>
+						<a href="http://www.insa-rennes.fr" class="image featured"><img src="images/insa.svg" alt="" style="max-height: 150px"/></a>
+						<header>
+							<h3><a href="http://www.insa-rennes.fr">INSA</a></h3>
+						</header>
+						<p>Institut National des Sciences Appliquées RENNES.</p>							
+					</article>
+				
+					<article>
+						<a href="http://adp-vaillant.fr/" class="image featured"><img src="images/adp.jpg" alt="" style="max-height: 150px"/></a>
+						<header>
+							<h3><a href="http://adp-vaillant.fr/">ADP Vaillant</a></h3>
+						</header>
+						<p>Catalyseur de réussite.</p>							
+					</article>
+				
+					<article>
+						<a href="http://www.coachfederation.org/" class="image featured"><img src="images/icf.jpg" alt="" style="max-height: 150px"/></a>
+						<header>
+							<h3><a href="http://www.coachfederation.org/">International Coach Federation</a></h3>
+						</header>
+						<p></p>							
+					</article>
+
+				</div>
+			</section>
+
 			<div id="footer">
 				<div class="container">
+				
+					<!--div id="map_canvas"></div>
 					<div class="row">
+						<div class="4u">
+							<div class="column-content">
+								<h3><span>Lieu</span> du congrès</h3>
+								<ul class="address">
+									<li> <i class="fa fa-map-marker"></i> <strong>Venez nous voir</strong><br>
+									INSA Rennes - campus Beaulieu<br>
+									20 Avenue Buttes des Coësmes<br>
+									57070 Metz </li>
+									
+									<li> <i class="fa fa-phone"></i> <strong>Appelez-nous</strong><br>
+									02.23.23.85.72 - Ouest INSA</li>
+									
+									<li> <i class="fa fa-envelope"></i> <strong>Écrivez-nous</strong><br>
+									<a href="mailto:contact@ouest-insa.fr">contact@ouest-insa.fr</a> </li>
+								</ul>
+							</div>
+						</div>
 						
-						<!-- Tweets -->
-							<section class="4u">
-								<header>
-									<h2 class="icon fa-twitter circled"><span class="label">Tweets</span></h2>
-								</header>
-								<ul class="divided">
-									<li>
-										<article class="tweet">
-											Amet nullam fringilla nibh nulla convallis tique ante sociis accumsan.
-											<span class="timestamp">5 minutes ago</span>
-										</article>
-									</li>
-									<li>
-										<article class="tweet">
-											Hendrerit rutrum quisque.
-											<span class="timestamp">30 minutes ago</span>
-										</article>
-									</li>
-									<li>
-										<article class="tweet">
-											Curabitur donec nulla massa laoreet nibh. Lorem praesent montes.
-											<span class="timestamp">3 hours ago</span>
-										</article>
-									</li>
-									<li>
-										<article class="tweet">
-											Lacus natoque cras rhoncus curae dignissim ultricies. Convallis orci aliquet.
-											<span class="timestamp">5 hours ago</span>
-										</article>
-									</li>
-								</ul>
-							</section>
-
-						<!-- Posts -->
-							<section class="4u">
-								<header>
-									<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
-								</header>
-								<ul class="divided">
-									<li>
-										<article class="post stub">
-											<header>
-												<h3><a href="#">Nisl fermentum integer</a></h3>
-											</header>
-											<span class="timestamp">3 hours ago</span>
-										</article>
-									</li>
-									<li>
-										<article class="post stub">
-											<header>
-												<h3><a href="#">Phasellus portitor lorem</a></h3>
-											</header>
-											<span class="timestamp">6 hours ago</span>
-										</article>
-									</li>
-									<li>
-										<article class="post stub">
-											<header>
-												<h3><a href="#">Magna tempus consequat</a></h3>
-											</header>
-											<span class="timestamp">Yesterday</span>
-										</article>
-									</li>
-									<li>
-										<article class="post stub">
-											<header>
-												<h3><a href="#">Feugiat lorem ipsum</a></h3>
-											</header>
-											<span class="timestamp">2 days ago</span>
-										</article>
-									</li>
-								</ul>
-							</section>
-
-						<!-- Photos -->
-							<section class="4u">
-								<header>
-									<h2 class="icon fa-camera circled"><span class="label">Photos</span></h2>
-								</header>
-								<div class="row 25% no-collapse">
-									<div class="6u">
-										<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+						<div class="4u">
+							<div class="column-content">
+								<h3>Obtenez un <span>Itinéraire</span></h3>
+								<form action="/routebeschrijving" onSubmit="calcRoute();return false;" id="routeForm">
+									<label for="routeStart"><strong>Partir depuis :</strong></label>
+									<input type="text" id="routeStart" value="Place Stanislas, Nancy">
+									<label for="travelMode"><strong>En passant par (optionnel) :</strong></label>
+									<input type="text" id="routeVia">
+									<label>Type de transport</label>
+									<div class="clearfix">
+										<label class="radio-option">
+										<input type="radio" name="travelMode" value="DRIVING" checked />
+										Voiture</label>
+										
+										<label class="radio-option">
+										<input type="radio" name="travelMode" value="BICYCLING" />
+										Vélo</label>
+										
+										<!--<label class="radio-option">
+										<input type="radio" name="travelMode" value="TRANSIT" />
+										Transports en commun</label>-->
+										
+										<!--label class="radio-option last">
+										<input type="radio" name="travelMode" value="WALKING" />
+										Marche</label>
 									</div>
-									<div class="6u">
-										<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-									</div>
-								</div>
-								<div class="row 25% no-collapse">
-									<div class="6u">
-										<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
-									</div>
-									<div class="6u">
-										<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
-									</div>
-								</div>
-								<div class="row 25% no-collapse">
-									<div class="6u">
-										<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
-									</div>
-									<div class="6u">
-										<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
-									</div>
-								</div>
-							</section>
-
+									<input type="submit" value="C'est parti !" class="btn btn-block">
+								</form>
+							</div>
+						</div>
+						
+						<div class="4u">
+							<div class="column-content">
+								<h3>Itinéraire</h3>
+								<div id="directionsPanel"> Remplissez le champ <strong>Partir depuis</strong> et cliquez sur le bouton "C'est parti !". </div>
+							</div>
+						</div>
 					</div>
-					<hr />
+					
+					<hr /-->
+					
 					<div class="row">
 						<div class="12u">
 							
-							<!-- Contact -->
 								<section class="contact">
 									<header>
-										<h3>Nisl turpis nascetur interdum?</h3>
+										<h3>Nos réseaux sociaux</h3>
 									</header>
-									<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+									<p>Suivez l'actualité de l'évènement sur nos réseaux sociaux !</p>
 									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://twitter.com/search?q=%23CRAOuest2015" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 										<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 									</ul>
 								</section>
 							
-							<!-- Copyright -->
 								<div class="copyright">
 									<ul class="menu">
-										<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										<li>&copy; <a href="http://ouest-insa.fr">CRAOuest2015</a>. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 									</ul>
 								</div>
 							
