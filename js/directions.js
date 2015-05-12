@@ -12,7 +12,7 @@ function initialize() {
     mapTypeControl: false
   };
   // add the map to the map placeholder
-  var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+  var map = new google.maps.Map(document.getElementById("map-canvas"),myOptions);
   directionsDisplay.setMap(map);
   directionsDisplay.setPanel(document.getElementById("directionsPanel"));
   // Add a marker to the map for the end-point of the directions.

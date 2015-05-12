@@ -18,7 +18,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<script src="http://maps.google.com/maps/api/js?key=AIzaSyAScTDxHxVLVrUx0APtGfufFJerF7L1CeI&sensor=false"></script>
+		<script src="http://maps.google.com/maps/api/js?key=AIzaSyAScTDxHxVLVrUx0APtGfufFJerF7L1CeI"></script>
 		<script src="js/directions.js"></script> 
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
@@ -38,13 +38,12 @@
 							<p style="color:#fff">1/2 JANVIER 2015 - RENNES</p>
 						</header>
 						<footer>
-							<a href="#details" class="button circled scrolly">Suivant</a>
+							<a href="#banner" class="button circled scrolly">Suivant</a>
 						</footer>
 					</div>
 				
 					<nav id="nav">
 						<ul>
-							<li><a href="#introduction" class="scrolly">Introduction</a></li>
 							<li><a href="#banner" class="scrolly">Détails</a></li>
 							<li><a href="#programme" class="scrolly">Programme</a></li>
 							<li><a href="#partenaires" class="scrolly">Partenaires</a></li>
@@ -167,21 +166,22 @@
 			<div id="footer">
 				<div class="container">
 				
-					<!--div id="map_canvas"></div>
+					<div id="map-canvas" class="map-canvas-class"></div>
+
 					<div class="row">
 						<div class="4u">
 							<div class="column-content">
 								<h3><span>Lieu</span> du congrès</h3>
 								<ul class="address">
-									<li> <i class="fa fa-map-marker"></i> <strong>Venez nous voir</strong><br>
+									<li> <i class="fa fa-map-marker"></i> <strong style="color: white;"><em>Venez nous voir</em></strong><br>
 									INSA Rennes - campus Beaulieu<br>
 									20 Avenue Buttes des Coësmes<br>
 									57070 Metz </li>
 									
-									<li> <i class="fa fa-phone"></i> <strong>Appelez-nous</strong><br>
+									<li> <i class="fa fa-phone"></i> <strong style="color: white;"><em>Appelez-nous</em></strong><br>
 									02.23.23.85.72 - Ouest INSA</li>
 									
-									<li> <i class="fa fa-envelope"></i> <strong>Écrivez-nous</strong><br>
+									<li> <i class="fa fa-envelope"></i> <strong style="color: white;"><em>Écrivez-nous</em></strong><br>
 									<a href="mailto:contact@ouest-insa.fr">contact@ouest-insa.fr</a> </li>
 								</ul>
 							</div>
@@ -191,17 +191,17 @@
 							<div class="column-content">
 								<h3>Obtenez un <span>Itinéraire</span></h3>
 								<form action="/routebeschrijving" onSubmit="calcRoute();return false;" id="routeForm">
-									<label for="routeStart"><strong>Partir depuis :</strong></label>
+									<label for="routeStart"><strong style="color: white;">Partir depuis :</strong></label>
 									<input type="text" id="routeStart" value="Place Stanislas, Nancy">
-									<label for="travelMode"><strong>En passant par (optionnel) :</strong></label>
+									<label for="travelMode"><strong style="color: white;">En passant par (optionnel) :</strong></label>
 									<input type="text" id="routeVia">
-									<label>Type de transport</label>
+									<label style="color: white;">Type de transport</label>
 									<div class="clearfix">
-										<label class="radio-option">
+										<label class="radio-option" style="color: white;">
 										<input type="radio" name="travelMode" value="DRIVING" checked />
 										Voiture</label>
 										
-										<label class="radio-option">
+										<label class="radio-option" style="color: white;">
 										<input type="radio" name="travelMode" value="BICYCLING" />
 										Vélo</label>
 										
@@ -209,7 +209,7 @@
 										<input type="radio" name="travelMode" value="TRANSIT" />
 										Transports en commun</label>-->
 										
-										<!--label class="radio-option last">
+										<label class="radio-option last" style="color: white;">
 										<input type="radio" name="travelMode" value="WALKING" />
 										Marche</label>
 									</div>
@@ -219,14 +219,14 @@
 						</div>
 						
 						<div class="4u">
-							<div class="column-content">
-								<h3>Itinéraire</h3>
+							<div class="column-content" style="height: 500px; overflow: auto; background-color: white; color: #363636;">
+								<h3 style="color: #363636;">Itinéraire</h3>
 								<div id="directionsPanel"> Remplissez le champ <strong>Partir depuis</strong> et cliquez sur le bouton "C'est parti !". </div>
 							</div>
 						</div>
 					</div>
 					
-					<hr /-->
+					<hr />
 					
 					<div class="row">
 						<div class="12u">
@@ -238,8 +238,8 @@
 									<p>Suivez l'actualité de l'évènement sur nos réseaux sociaux !</p>
 									<ul class="icons">
 										<li><a href="https://twitter.com/search?q=%23CRAOuest2015" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+										<li><a href="https://www.facebook.com/OuestINSA" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="https://fr.linkedin.com/company/ouest-insa-junior-entreprise" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 									</ul>
 								</section>
 							
